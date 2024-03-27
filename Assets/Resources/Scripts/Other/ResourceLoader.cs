@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Amaya
@@ -16,7 +16,13 @@ namespace Amaya
         public static T Instantiate<T>(string prefabPath, Transform parent) where T : MonoBehaviour
         {
             var obj = Instantiate(prefabPath, parent);
-            return obj.AddComponent<T>();
+            return obj.GetComponent<T>();
         }
+
+        public static T Load<T>(string path) where T : Object =>
+            Resources.Load<T>(path);
+
+        public static List<T> LoadAll<T>(string path) where T : Object =>
+            Resources.LoadAll<T>(path).ToList();
     }
 }

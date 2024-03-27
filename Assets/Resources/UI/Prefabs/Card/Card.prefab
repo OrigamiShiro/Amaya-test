@@ -222,10 +222,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4501102748594334499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6f1c65386e61e0438471eb6e444182f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bcd705fe4182bf4392a20f0fb6758ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardBundleData: {fileID: 0}
   _button: {fileID: 2614213010286636494}
   _sprite: {fileID: 846562492871140467}
 --- !u!1 &8247593315129934429
